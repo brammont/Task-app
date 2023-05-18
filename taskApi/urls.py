@@ -1,9 +1,9 @@
 from django.urls import path, include
 from rest_framework import routers
-from taskApi import views
+from .views import TaskView
 
 router = routers.DefaultRouter()
-router.register(r'task',views.TaskView,'tasks')
+router.register(r'tasks',TaskView,'tasks')
 
 #api version
 
